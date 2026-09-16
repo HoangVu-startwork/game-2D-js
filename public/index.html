@@ -1,0 +1,131 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Square Shooter</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         GAME
+    ========================== -->
+
+    <canvas id="game"></canvas>
+
+
+    <!-- =========================
+         SCORE
+    ========================== -->
+
+    <div id="score">
+        Score: 0
+    </div>
+
+
+    <!-- =========================
+         GAME SETTINGS
+    ========================== -->
+
+    <div id="settings">
+
+        <h2>Game Settings</h2>
+
+
+        <label>
+            Số tia bắn cùng lúc
+
+            <input
+                id="bulletCount"
+                type="number"
+                min="1"
+                value="3"
+            >
+        </label>
+
+
+        <label>
+            Số hình tròn mỗi đợt
+
+            <input
+                id="enemyCount"
+                type="number"
+                min="1"
+                value="5"
+            >
+        </label>
+
+
+        <label>
+            Tốc độ hình tròn
+
+            <input
+                id="enemySpeed"
+                type="number"
+                min="0.1"
+                step="0.1"
+                value="0.5"
+            >
+        </label>
+
+
+        <label>
+            Tốc độ tia
+
+            <input
+                id="bulletSpeed"
+                type="number"
+                min="0.1"
+                step="0.1"
+                value="3"
+            >
+        </label>
+
+
+        <label>
+            Thời gian sinh hình tròn (ms)
+
+            <input
+                id="spawnTime"
+                type="number"
+                min="100"
+                value="2000"
+            >
+        </label>
+
+
+        <label>
+            Thời gian bắn (ms)
+
+            <input
+                id="shootTime"
+                type="number"
+                min="100"
+                value="1000"
+            >
+        </label>
+
+
+        <button id="startGame">
+            Bắt đầu / Áp dụng
+        </button>
+
+    </div>
+
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>
+```
